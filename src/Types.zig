@@ -10,6 +10,13 @@ const Pixel = struct {
     }
 };
 
+const HuffmanTableItem = struct {
+    first: isize,
+    second: []u8,
+};
+
+const HuffmanTable = [16]HuffmanTableItem
+
 const HT_DC = 0;
 const HT_AC = 1;
 const HT_Y = 0;
